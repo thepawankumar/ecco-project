@@ -5,5 +5,5 @@ variable "Location" {
 
 variable "ResourceGroup" {
     type        = string
-    default     = "rg-connectivity-network-001"   
+    default     = "rg-connectivity-001"   
 }
