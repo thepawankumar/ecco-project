@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     paths:
-      - 'Subscriptions/Sub-MVP-Sponsorship/rg-loganalytics-001/*.tf'
+      - 'ecco-project/*.tf'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
