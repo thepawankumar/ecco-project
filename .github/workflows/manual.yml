@@ -5,9 +5,9 @@
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
- # push:
-  #  paths:
-   #   - 'main/*.tf'
+  push:
+    paths:
+      - '*/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,17 +35,17 @@ jobs:
       - name: 'Terraform init'
         id: init
         run: |
-          cd Subscriptions/Sub-MVP-Sponsorship/rg-loganalytics-001
+          cd .
           terraform init
 
       - name: 'Terraform plan'
         id: plan
         run: |
-          cd Subscriptions/Sub-MVP-Sponsorship/rg-loganalytics-001
+          cd .
           terraform plan
           
       - name: 'Terraform apply'
         id: apply
         run: |
-          cd Subscriptions/Sub-MVP-Sponsorship/rg-loganalytics-001
+          cd .
           terraform apply -auto-approve
